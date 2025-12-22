@@ -1,0 +1,82 @@
+body {
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background-image: url("./resources/northern-lights.jpg");
+  background-size: cover;
+  background-position: center -200px;
+  background-color: black;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to top, black 30%, transparent 100%);
+}
+
+.countdown {
+  padding-top: 25%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.time {
+  text-align: center;
+  min-width: 80px;
+}
+
+.time span {
+  display: inline-block;
+  font-size: 7rem;
+  font-weight: 500;
+  line-height: 1;
+  color: white;
+  width: 3ch;
+}
+
+.time label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-top: 6px;
+  display: block;
+  color: white;
+}
+
+.message {
+    padding-top: 5%;
+    color: white;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.message .loc {
+    font-weight: 200;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .countdown {
+    gap: 14px;
+    padding: 40%;
+  }
+  .time span {
+    font-size: 2.2rem;
+  }
+}
