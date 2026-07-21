@@ -29,7 +29,7 @@ This project provides a simple and visually focused countdown interface that upd
 
 Clone the repository:
 
-    git clone https://github.com/your-username/Full-Page-Web-Countdown.git
+    git clone https://github.com/Tom-Bow/Full-Page-Web-Countdown.git
 
 Open `index.html` in a web browser to run the application.
 
