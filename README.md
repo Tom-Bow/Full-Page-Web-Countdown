@@ -10,6 +10,7 @@ This project provides a simple and visually focused countdown interface that upd
 
 - Real-time countdown updates every second
 - Full-page countdown display
+- Customisable background image
 - Displays remaining:
   - Days
   - Hours
@@ -22,7 +23,7 @@ This project provides a simple and visually focused countdown interface that upd
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
 
 ## Installation
 
@@ -55,15 +56,37 @@ The displayed location and date can be modified in `index.html`:
 
 Update the text values to match the desired event.
 
+### Changing the Background Image
+
+The countdown background can be customised by replacing the existing image in the `resources` folder.
+
+To update the background:
+
+1. Add your desired image to the `resources` folder.
+2. Rename the image to:
+
+    background.jpg
+
+3. Replace the existing file.
+
+The new image will automatically be used as the countdown background.
+
+## Project Structure
+
+    Full-Page-Web-Countdown/
+    |
+    ├── resources/
+    │   └── background.jpg
+    ├── index.html
+    ├── styles.css
+    ├── script.js
+    └── README.md
+
 ## Future Enhancements
 
 Potential improvements include:
 
-- Adding custom background images
-- Supporting user-defined countdowns
-- Adding timezone configuration
+- Supporting additional image formats
+- Allowing users to configure the countdown without editing source files
+- Adding timezone selection
 - Displaying a message when the countdown reaches zero
-
-## License
-
-This project is available under the MIT License.
